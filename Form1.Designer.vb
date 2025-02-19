@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        LBLone = New Label()
+        LblOne = New Label()
         Label2 = New Label()
         LBLthree = New Label()
         BTNadd = New Button()
@@ -33,92 +33,86 @@ Partial Class Form1
         TXTone = New TextBox()
         SuspendLayout()
         ' 
-        ' LBLone
+        ' LblOne
         ' 
-        LBLone.AutoSize = True
-        LBLone.Location = New Point(25, 52)
-        LBLone.Name = "LBLone"
-        LBLone.Size = New Size(189, 20)
-        LBLone.TabIndex = 0
-        LBLone.Text = "Deposit Amount:               $"
+        LblOne.AutoSize = True
+        LblOne.Location = New Point(22, 39)
+        LblOne.Name = "LblOne"
+        LblOne.Size = New Size(148, 15)
+        LblOne.TabIndex = 0
+        LblOne.Text = "Deposit Amount:               $"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(25, 272)
+        Label2.Location = New Point(22, 204)
         Label2.Name = "Label2"
-        Label2.Size = New Size(187, 20)
+        Label2.Size = New Size(148, 15)
         Label2.TabIndex = 1
         Label2.Text = "Withdrawal amount:         $"
         ' 
         ' LBLthree
         ' 
         LBLthree.AutoSize = True
-        LBLthree.Location = New Point(25, 471)
+        LBLthree.Location = New Point(22, 353)
         LBLthree.Name = "LBLthree"
-        LBLthree.Size = New Size(162, 20)
+        LBLthree.Size = New Size(129, 15)
         LBLthree.TabIndex = 2
         LBLthree.Text = "Account Balance:          "
         ' 
         ' BTNadd
         ' 
-        BTNadd.Location = New Point(125, 111)
-        BTNadd.Margin = New Padding(3, 4, 3, 4)
+        BTNadd.Location = New Point(109, 83)
         BTNadd.Name = "BTNadd"
-        BTNadd.Size = New Size(337, 36)
+        BTNadd.Size = New Size(295, 27)
         BTNadd.TabIndex = 3
         BTNadd.Text = "Add To Account"
         BTNadd.UseVisualStyleBackColor = True
         ' 
         ' BTNtake
         ' 
-        BTNtake.Location = New Point(125, 384)
-        BTNtake.Margin = New Padding(3, 4, 3, 4)
+        BTNtake.Location = New Point(109, 288)
         BTNtake.Name = "BTNtake"
-        BTNtake.Size = New Size(337, 36)
+        BTNtake.Size = New Size(295, 27)
         BTNtake.TabIndex = 4
         BTNtake.Text = "Take From Account"
         BTNtake.UseVisualStyleBackColor = True
         ' 
         ' BTNexit
         ' 
-        BTNexit.Location = New Point(478, 495)
-        BTNexit.Margin = New Padding(3, 4, 3, 4)
+        BTNexit.Location = New Point(418, 371)
         BTNexit.Name = "BTNexit"
-        BTNexit.Size = New Size(127, 36)
+        BTNexit.Size = New Size(111, 27)
         BTNexit.TabIndex = 5
         BTNexit.Text = "Exit"
         BTNexit.UseVisualStyleBackColor = True
         ' 
         ' TXTthree
         ' 
-        TXTthree.Location = New Point(311, 471)
-        TXTthree.Margin = New Padding(3, 4, 3, 4)
+        TXTthree.Location = New Point(272, 353)
         TXTthree.Name = "TXTthree"
-        TXTthree.Size = New Size(150, 27)
+        TXTthree.Size = New Size(132, 23)
         TXTthree.TabIndex = 6
         ' 
         ' TXTtwo
         ' 
-        TXTtwo.Location = New Point(201, 272)
-        TXTtwo.Margin = New Padding(3, 4, 3, 4)
+        TXTtwo.Location = New Point(176, 204)
         TXTtwo.Name = "TXTtwo"
-        TXTtwo.Size = New Size(150, 27)
+        TXTtwo.Size = New Size(132, 23)
         TXTtwo.TabIndex = 7
         ' 
         ' TXTone
         ' 
-        TXTone.Location = New Point(201, 48)
-        TXTone.Margin = New Padding(3, 4, 3, 4)
+        TXTone.Location = New Point(176, 36)
         TXTone.Name = "TXTone"
-        TXTone.Size = New Size(150, 27)
+        TXTone.Size = New Size(132, 23)
         TXTone.TabIndex = 8
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(617, 600)
+        ClientSize = New Size(540, 450)
         Controls.Add(TXTone)
         Controls.Add(TXTtwo)
         Controls.Add(TXTthree)
@@ -127,15 +121,14 @@ Partial Class Form1
         Controls.Add(BTNadd)
         Controls.Add(LBLthree)
         Controls.Add(Label2)
-        Controls.Add(LBLone)
-        Margin = New Padding(3, 4, 3, 4)
+        Controls.Add(LblOne)
         Name = "Form1"
         Text = "Banking Deposits"
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
-    Friend WithEvents LBLone As Label
+    Friend WithEvents LblOne As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents LBLthree As Label
     Friend WithEvents BTNadd As Button

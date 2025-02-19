@@ -8,6 +8,7 @@ Public Class Form1
     Dim account(10) As Decimal
     Dim CurrentTransactions As Integer = 0
     Dim Balance As Decimal = 0
+
     Private Sub BTNadd_Click(sender As Object, e As EventArgs) Handles BTNadd.Click
         'Variable
         Dim userinput As Decimal = TXTone.Text
@@ -20,6 +21,8 @@ Public Class Form1
         ElseIf CurrentTransactions > 10 Then
             'If over 10 display message
             TXTone.Text = "Have exceeded the amout of transactions"
+            TXTone.ReadOnly = True
+            BTNadd.Enabled = False
         End If
 
         'display balance
@@ -45,6 +48,8 @@ Public Class Form1
             'IF not enough money display message
             TXTtwo.Text = "Not Enough Money"
             Balance = 0
+            TXTtwo.ReadOnly = True
+            BTNtake.Enabled = False
         End If
 
         'display balance
@@ -55,4 +60,6 @@ Public Class Form1
         'Ends application
         End
     End Sub
+
+
 End Class
